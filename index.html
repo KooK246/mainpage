@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Locker Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wing-container">
+        <label>Pick a wing</label>
+        <select id="wing">
+            <option value="12">Left Wing (₹12/h)</option>
+            <option value="12">Right Wing (₹12/h)</option>
+            <option value="10">Middle Wing (₹10/h)</option>
+        </select>
+    </div>
+
+    <ul class="show">
+        <li>
+            <div class="locker"></div>
+            <small>N/A</small>
+        </li>
+
+        <li>
+            <div class="locker selected"></div>
+            <small>Selected</small>
+        </li>
+
+        <li>
+            <div class="locker occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+        </div>
+
+        <div class="row">
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker occupied"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker occupied"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+        </div>
+
+        <div class="row">
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+        </div>
+
+        <div class="row">
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker occupied"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker occupied"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+        </div>
+
+        <div class="row">
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker occupied"></div>
+            <div class="locker occupied"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+        </div>
+
+        <div class="row">
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+            <div class="locker"></div>
+        </div>
+    </div>
+
+    <p class="text">
+        You have selected <span id="count">0</span> lockers for a price of ₹<span id="total">0</span> per hour.
+    </p>
+
+    <div class="button">
+        <button onclick='alert("Your booking was successful, your one time password is " + (Math.floor(Math.random() * 900000)));' style="background-color: greenyellow; margin: 20px;" type="button">Confirm</button>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
